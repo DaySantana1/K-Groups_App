@@ -59,10 +59,10 @@ flutter:
   uses-material-design: true
 
   assets:
-   
+   - images/
   # To add assets to your application, add an assets section, like this:
   # assets:
-    
+  #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
@@ -77,9 +77,12 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-    - family: Pacifico
+    - family: LexendRegular
       fonts:
-        - asset: fonts/Pacifico-Regular.ttf
+        - asset: fonts/LexendZetta-Regular.ttf
+    - family: LexendLight
+      fonts:    
+        - asset: fonts/LexendZetta-Light.ttf
 
   #
   # For details regarding fonts from package dependencies,

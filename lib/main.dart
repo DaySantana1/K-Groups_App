@@ -11,6 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+        //cor gradiente de fundo
         body: Container(
           decoration: BoxDecoration(
             gradient: LinearGradient(
@@ -25,145 +26,155 @@ class MyApp extends StatelessWidget {
               ], // cores do gradiente
             ),
           ),
+
+          //Texto Aespa
           child: Column(
             children: [
               Align(
-                alignment: Alignment.topCenter,
+                alignment: Alignment.topCenter, // deixar o texto no topo e centro
                 child: Padding(
-                  padding: EdgeInsets.all(30), // Ajuste do texto para o topo da página
+                  padding: EdgeInsets.only(
+                      top: 50), // Ajuste do texto para o topo da página
                   child: Text(
                     'AESPA',
                     style: TextStyle(
-                      fontSize: 24,
-                      color: Colors.white,
-                    ),
+                        fontSize: 35,
+                        color: Colors.white,
+                        fontFamily: 'LexendRegular'),
                   ),
                 ),
               ),
-             Padding(
-  padding: EdgeInsets.all(15.0),
-  child: Column(
-    children: [
-      Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: [
-          CircleAvatar(
-            radius: 60,
-            backgroundImage: AssetImage(
-              'images/winter.jpg',
-            ),
-          ),
-          SizedBox(
-            width: 8,
-          ), // Espaçamento entre o CircleAvatar e o Text
-          Text(
-            'WINTER',
-            style: TextStyle(
-              fontSize: 35,
-              color: Colors.white,
-              fontWeight: FontWeight.bold,
-            ),
-          ),
-        ],
-      ),
-      
-    ],
-  ),
-),
 
-Padding(
-  padding: EdgeInsets.all(15.0),
-  child: Column(
-    children: [
-      Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: [
-          CircleAvatar(
-            radius: 60,
-            backgroundImage: AssetImage(
-              'images/winter.jpg',
-            ),
-          ),
-          SizedBox(
-            width: 8,
-          ), // Espaçamento entre o CircleAvatar e o Text
-          Text(
-            'WINTER',
-            style: TextStyle(
-              fontSize: 35,
-              color: Colors.white,
-              fontWeight: FontWeight.bold,
-            ),
-          ),
-        ],
-      ),
-      
-    ],
-  ),
-),
+              //Integrante winter
+              Padding(
+                padding: EdgeInsets.all(10.0),
+                child: Column(
+                  children: [
+                    Row( // linha imagem e texto
+                      mainAxisAlignment: MainAxisAlignment.start, // deixar o elemento da linha - imagem e texto - alinhadas a esquerda
+                      children: [
+                        Padding(
+                          padding: EdgeInsets.all(5),
+                          child: CircleAvatar(
+                            radius: 60,
+                            backgroundImage: AssetImage(
+                              'images/winter.jpg',
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          width: 8,
+                        ), // Espaçamento entre o CircleAvatar e o Text
+                        Text(
+                          'WINTER',
+                          style: TextStyle(
+                            fontSize: 25,
+                            color: Colors.white,
+                            fontFamily: 'LexendLight'
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+              Padding(
+                padding: EdgeInsets.all(10.0),
+                child: Column(
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Padding(
+                          padding: EdgeInsets.all(5),
+                          child: CircleAvatar(
+                            radius: 60,
+                            backgroundImage: AssetImage(
+                              'images/karina.png',
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          width: 8,
+                        ), // Espaçamento entre o CircleAvatar e o Text
+                        Text(
+                          'KARINA',
+                          style: TextStyle(
+                            fontSize: 25,
+                            color: Colors.white,
+                            fontFamily: 'LexendLight'
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+              Padding(
+                padding: EdgeInsets.all(10.0),
+                child: Column(
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Padding(
+                          padding: EdgeInsets.all(5),
+                          child: CircleAvatar(
+                            radius: 60,
+                            backgroundImage: AssetImage(
+                              'images/ningning.png',
 
-Padding(
-  padding: EdgeInsets.all(15.0),
-  child: Column(
-    children: [
-      Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: [
-          CircleAvatar(
-            radius: 60,
-            backgroundImage: AssetImage(
-              'images/winter.jpg',
-            ),
-          ),
-          SizedBox(
-            width: 8,
-          ), // Espaçamento entre o CircleAvatar e o Text
-          Text(
-            'WINTER',
-            style: TextStyle(
-              fontSize: 35,
-              color: Colors.white,
-              fontWeight: FontWeight.bold,
-            ),
-          ),
-        ],
-      ),
-      
-    ],
-  ),
-),
-
-Padding(
-  padding: EdgeInsets.all(15.0),
-  child: Column(
-    children: [
-      Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: [
-          CircleAvatar(
-            radius: 60,
-            backgroundImage: AssetImage(
-              'images/winter.jpg',
-            ),
-          ),
-          SizedBox(
-            width: 8,
-          ), // Espaçamento entre o CircleAvatar e o Text
-          Text(
-            'WINTER',
-            style: TextStyle(
-              fontSize: 35,
-              color: Colors.white,
-              fontWeight: FontWeight.bold,
-            ),
-          ),
-        ],
-      ),
-      
-    ],
-  ),
-),
-
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          width: 8,
+                        ), // Espaçamento entre o CircleAvatar e o Text
+                        Text(
+                          'NINGNING',
+                          style: TextStyle(
+                            fontSize: 25,
+                            color: Colors.white,
+                            fontFamily: 'LexendLight'
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+              Padding(
+                padding: EdgeInsets.all(10.0),
+                child: Column(
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Padding(
+                          padding: EdgeInsets.all(5),
+                          child: CircleAvatar(
+                            radius: 60,
+                            backgroundImage: AssetImage(
+                              'images/gizelle.png',
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          width: 8,
+                        ), // Espaçamento entre o CircleAvatar e o Text
+                        Text(
+                          'GIZELLE',
+                          style: TextStyle(
+                            fontSize: 25,
+                            color: Colors.white,
+                            fontFamily: 'LexendLight'
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
             ],
           ),
         ),
