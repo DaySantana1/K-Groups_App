@@ -1,82 +1,169 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(MyApp()); // aplicativo linha 7
 }
 
-class MyApp extends StatelessWidget{
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.teal,
-        body: Padding(
-          padding: EdgeInsets.all(8.0),
+        body: Container(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment
+                  .topLeft, // Ponto inicial do gradiente do ponto superior esquerdo
+              end: Alignment
+                  .bottomRight, // Ponto final do gradiente do ponto inferior direito
+              colors: [
+                Color.fromRGBO(92, 49, 183, 1), // Cor 1 com opacidade 100%
+                Color.fromRGBO(82, 110, 183, 1), // Cor 2 com opacidade 100%
+                Color.fromRGBO(1, 7, 40, 1),
+              ], // cores do gradiente
+            ),
+          ),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              CircleAvatar(
-                radius: 60,
-                backgroundImage: AssetImage(
-                  'images/formula_1_lewis_hamilton_with_mercedes_amg_f1_w10_eq_power_racing_valteri_bottas_hd_f1_2020-1920x1080.jpg',
-                ),
-              ),
-              Text('Lewis Hamilton',
-              style: TextStyle(
-                fontSize: 35,
-                color: Colors.white,
-                fontWeight: FontWeight.bold,
-                fontFamily: 'Pacifico',
-                ),
-              ),
-              Text('Piloto',
-              style: TextStyle(
-                fontSize: 20,
-                color: Colors.white,
-                ),
-              ),
-              Card(
+              Align(
+                alignment: Alignment.topCenter,
                 child: Padding(
-                  padding: EdgeInsets.all(12.0),
-                  child: Row(
-                    children: [
-                      Icon(
-                        Icons.phone,
-                        color: Colors.black
-                        ),
-                      SizedBox(
-                        width: 20,
-                      ),
-                      Text('+55 (11)91234-5678',
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 20
-                      ),)
-                    ],
+                  padding: EdgeInsets.all(30), // Ajuste do texto para o topo da página
+                  child: Text(
+                    'AESPA',
+                    style: TextStyle(
+                      fontSize: 24,
+                      color: Colors.white,
+                    ),
                   ),
                 ),
               ),
-              Card(
-                child: Padding(
-                  padding: EdgeInsets.all(12.0),
-                  child: Row(
-                    children: [
-                      Icon(
-                        Icons.email,
-                        color: Colors.black
-                        ),
-                      SizedBox(
-                        width: 20,
-                      ),
-                      Text('test@test.com',
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 20
-                      ),)
-                    ],
-                  ),
-                ),
-              ),
+             Padding(
+  padding: EdgeInsets.all(15.0),
+  child: Column(
+    children: [
+      Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: [
+          CircleAvatar(
+            radius: 60,
+            backgroundImage: AssetImage(
+              'images/winter.jpg',
+            ),
+          ),
+          SizedBox(
+            width: 8,
+          ), // Espaçamento entre o CircleAvatar e o Text
+          Text(
+            'WINTER',
+            style: TextStyle(
+              fontSize: 35,
+              color: Colors.white,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+        ],
+      ),
+      
+    ],
+  ),
+),
+
+Padding(
+  padding: EdgeInsets.all(15.0),
+  child: Column(
+    children: [
+      Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: [
+          CircleAvatar(
+            radius: 60,
+            backgroundImage: AssetImage(
+              'images/winter.jpg',
+            ),
+          ),
+          SizedBox(
+            width: 8,
+          ), // Espaçamento entre o CircleAvatar e o Text
+          Text(
+            'WINTER',
+            style: TextStyle(
+              fontSize: 35,
+              color: Colors.white,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+        ],
+      ),
+      
+    ],
+  ),
+),
+
+Padding(
+  padding: EdgeInsets.all(15.0),
+  child: Column(
+    children: [
+      Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: [
+          CircleAvatar(
+            radius: 60,
+            backgroundImage: AssetImage(
+              'images/winter.jpg',
+            ),
+          ),
+          SizedBox(
+            width: 8,
+          ), // Espaçamento entre o CircleAvatar e o Text
+          Text(
+            'WINTER',
+            style: TextStyle(
+              fontSize: 35,
+              color: Colors.white,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+        ],
+      ),
+      
+    ],
+  ),
+),
+
+Padding(
+  padding: EdgeInsets.all(15.0),
+  child: Column(
+    children: [
+      Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: [
+          CircleAvatar(
+            radius: 60,
+            backgroundImage: AssetImage(
+              'images/winter.jpg',
+            ),
+          ),
+          SizedBox(
+            width: 8,
+          ), // Espaçamento entre o CircleAvatar e o Text
+          Text(
+            'WINTER',
+            style: TextStyle(
+              fontSize: 35,
+              color: Colors.white,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+        ],
+      ),
+      
+    ],
+  ),
+),
+
             ],
           ),
         ),
