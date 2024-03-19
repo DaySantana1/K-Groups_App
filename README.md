@@ -2,8 +2,8 @@
 # Meu Projeto Flutter
 Este é o meu projeto Flutter, onde explorei e aprendi sobre o desenvolvimento de aplicativos móveis com Flutter.
 
-## Visão Geral do Projeto
-O objetivo deste projeto é criar um aplicativo simples que demonstra o uso de alguns widgets básicos e conceitos essenciais do Flutter. O aplicativo consiste em uma tela inicial com um gradiente de cores e várias imagens de avatar com nomes associados.
+## Layout do Projeto
+https://www.figma.com/file/AVrmETx34i4KztvtaKrQAX/aespa?type=design&node-id=0-1&mode=design&t=VepnaAI2Mn7VEiBd-0
 
 ## Tecnologias Utilizadas
 Flutter: Utilizamos o framework Flutter para desenvolver o aplicativo, aproveitando seus recursos de UI rica e desenvolvimento rápido.
@@ -22,4 +22,3 @@ Clone este repositório em sua máquina local.
 Navegue até o diretório do projeto no terminal.
 Execute o comando flutter run para iniciar o aplicativo no emulador ou dispositivo conectado.
 
-![image](https://github.com/DaySantana1/Card_App/assets/104851016/88e23086-a43b-4582-8cae-dfec1915e94a)
