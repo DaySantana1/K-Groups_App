@@ -67,7 +67,112 @@ class AlbunsSC extends StatelessWidget {
                         ),
                       ),
                       Text(
-                        'NINGNING',
+                        'Better Things',
+                        style: TextStyle(
+                            fontSize: 10,
+                            color: Colors.white,
+                            fontFamily: 'LexendLight'),
+                      ),
+                    ],
+                  ),
+
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      SizedBox(
+                        width: 80, // Definindo a largura desejada da imagem
+                        height: 80, // Definindo a altura desejada da imagem
+                        child: Image.asset(
+                          'images/drama.png',
+                          fit: BoxFit.cover, // Para cobrir o tamanho definido
+                        ),
+                      ),
+                      Text(
+                        'DRAMA',
+                        style: TextStyle(
+                            fontSize: 10,
+                            color: Colors.white,
+                            fontFamily: 'LexendLight'),
+                      ),
+                    ],
+                  ),
+
+                Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      SizedBox(
+                        width: 80, // Definindo a largura desejada da imagem
+                        height: 80, // Definindo a altura desejada da imagem
+                        child: Image.asset(
+                          'images/spicy.png',
+                          fit: BoxFit.cover, // Para cobrir o tamanho definido
+                        ),
+                      ),
+                      Text(
+                        'SPICY',
+                        style: TextStyle(
+                            fontSize: 10,
+                            color: Colors.white,
+                            fontFamily: 'LexendLight'),
+                      ),
+                    ],
+                  ),
+
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      SizedBox(
+                        width: 80, // Definindo a largura desejada da imagem
+                        height: 80, // Definindo a altura desejada da imagem
+                        child: Image.asset(
+                          'images/savage.png',
+                          fit: BoxFit.cover, // Para cobrir o tamanho definido
+                        ),
+                      ),
+                      Text(
+                        'SAVAGE',
+                        style: TextStyle(
+                            fontSize: 25,
+                            color: Colors.white,
+                            fontFamily: 'LexendLight'),
+                      ),
+                    ],
+                  ),
+
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      SizedBox(
+                        width: 80, // Definindo a largura desejada da imagem
+                        height: 80, // Definindo a altura desejada da imagem
+                        child: Image.asset(
+                          'images/next.png',
+                          fit: BoxFit.cover, // Para cobrir o tamanho definido
+                        ),
+                      ),
+                      Text(
+                        'Next Level',
+                        style: TextStyle(
+                            fontSize: 25,
+                            color: Colors.white,
+                            fontFamily: 'LexendLight'),
+                      ),
+                    ],
+                  ),
+
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      SizedBox(
+                        width: 80, // Definindo a largura desejada da imagem
+                        height: 80, // Definindo a altura desejada da imagem
+                        child: Image.asset(
+                          'images/blackmamba.png',
+                          fit: BoxFit.cover, // Para cobrir o tamanho definido
+                        ),
+                      ),
+                      Text(
+                        'Black Mamba',
                         style: TextStyle(
                             fontSize: 25,
                             color: Colors.white,
