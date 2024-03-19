@@ -84,6 +84,12 @@ flutter:
       fonts:    
         - asset: fonts/LexendZetta-Light.ttf
 
+    - family: Lexend-ExtraLight
+      fonts:    
+        - asset: fonts/LexendZetta-ExtraLight.ttf
+
+        
+
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

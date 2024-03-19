@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(AlbunsSC());
+  runApp(AlbunsScreen());
 }
 
-class AlbunsSC extends StatelessWidget {
+class AlbunsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -58,174 +58,180 @@ class AlbunsSC extends StatelessWidget {
               Spacer(),
 
               // Row para exibir imagens e textos
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              Column(
                 children: [
-                  Column(
+                  Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      // Imagem e texto "Better Things"
-                      SizedBox(
-                        width: 80, // Definindo a largura desejada da imagem
-                        height: 80, // Definindo a altura desejada da imagem
-                        child: Image.asset(
-                          'images/betterthings.png',
-                          fit: BoxFit.cover, // Para cobrir o tamanho definido
-                        ),
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          // Imagem e texto "Better Things"
+                          SizedBox(
+                            width: 100, // Definindo a largura desejada da imagem
+                            height: 100, // Definindo a altura desejada da imagem
+                            child: Image.asset(
+                              'images/betterthings.png',
+                              fit: BoxFit.cover, // Para cobrir o tamanho definido
+                            ),
+                          ),
+                          Padding(
+                            padding: EdgeInsets.all(5),
+                            child: Text(
+                              'Better\nThings',
+                              style: TextStyle(
+                                  fontSize: 15,
+                                  color: Colors.white,
+                                  fontFamily: 'LexendLight',
+                                  letterSpacing: -2.0,),
+                                  overflow: TextOverflow.ellipsis, // Define o comportamento de overflow
+                                  maxLines: null, // Permite múltiplas linhas (nenhum limite)
+                            ),
+                          ),
+                        ],
                       ),
-                      Padding(
-                        padding: EdgeInsets.all(5),
-                        child: Text(
-                          'Better\nThings',
-                          style: TextStyle(
-                              fontSize: 15,
-                              color: Colors.white,
-                              fontFamily: 'LexendLight',
-                              letterSpacing: -2.0,),
-                              overflow: TextOverflow.ellipsis, // Define o comportamento de overflow
-                              maxLines: null, // Permite múltiplas linhas (nenhum limite)
-                        ),
+                  
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          // Imagem e texto "Better Things"
+                          SizedBox(
+                            width: 100, // Definindo a largura desejada da imagem
+                            height: 100, // Definindo a altura desejada da imagem
+                            child: Image.asset(
+                              'images/drama.png',
+                              fit: BoxFit.cover, // Para cobrir o tamanho definido
+                            ),
+                          ),
+                          Padding(
+                            padding: EdgeInsets.only(top: 10),
+                            child: Text(
+                  
+                              'DRAMA\n',
+                              style: TextStyle(
+                                  fontSize: 15,
+                                  color: Colors.white,
+                                  fontFamily: 'LexendLight',
+                                  letterSpacing: -2.0,),
+                            ),
+                          ),
+                        ],
+                      ),
+                  
+                       Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          // Imagem e texto "Better Things"
+                          SizedBox(
+                            width: 100, // Definindo a largura desejada da imagem
+                            height: 100, // Definindo a altura desejada da imagem
+                            child: Image.asset(
+                              'images/spicy.png',
+                              fit: BoxFit.cover, // Para cobrir o tamanho definido
+                            ),
+                          ),
+                          Padding(
+                            padding: EdgeInsets.only(top: 10),
+                            child: Text(
+                  
+                              'SPICY\n',
+                              style: TextStyle(
+                                  fontSize: 15,
+                                  color: Colors.white,
+                                  fontFamily: 'LexendLight',
+                                  letterSpacing: -2.0,),
+                            ),
+                          ),
+                        ],
                       ),
                     ],
                   ),
-
-                  Column(
+                  
+                   SizedBox(height: 40),
+                  
+                  Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      // Imagem e texto "Better Things"
-                      SizedBox(
-                        width: 80, // Definindo a largura desejada da imagem
-                        height: 80, // Definindo a altura desejada da imagem
-                        child: Image.asset(
-                          'images/drama.png',
-                          fit: BoxFit.cover, // Para cobrir o tamanho definido
-                        ),
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          // Imagem e texto "Better Things"
+                          SizedBox(
+                            width: 100, // Definindo a largura desejada da imagem
+                            height: 100, // Definindo a altura desejada da imagem
+                            child: Image.asset(
+                              'images/savage.png',
+                              fit: BoxFit.cover, // Para cobrir o tamanho definido
+                            ),
+                          ),
+                          Padding(
+                            padding: EdgeInsets.all(5),
+                            child: Text(
+                              'SAVAGE \n',
+                              style: TextStyle(
+                                  fontSize: 15,
+                                  color: Colors.white,
+                                  fontFamily: 'LexendLight',
+                                  letterSpacing: -2.0,),
+                                  overflow: TextOverflow.ellipsis, // Define o comportamento de overflow
+                                  maxLines: null, // Permite múltiplas linhas (nenhum limite)
+                            ),
+                          ),
+                        ],
                       ),
-                      Padding(
-                        padding: EdgeInsets.only(top: 10),
-                        child: Text(
-
-                          'DRAMA\n',
-                          style: TextStyle(
-                              fontSize: 15,
-                              color: Colors.white,
-                              fontFamily: 'LexendLight',
-                              letterSpacing: -2.0,),
-                        ),
+                  
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          // Imagem e texto "Better Things"
+                          SizedBox(
+                            width: 100, // Definindo a largura desejada da imagem
+                            height: 100, // Definindo a altura desejada da imagem
+                            child: Image.asset(
+                              'images/next.png',
+                              fit: BoxFit.cover, // Para cobrir o tamanho definido
+                            ),
+                          ),
+                          Padding(
+                            padding: EdgeInsets.only(top: 10),
+                            child: Text(
+                  
+                              'Next\nLevel',
+                              style: TextStyle(
+                                  fontSize: 15,
+                                  color: Colors.white,
+                                  fontFamily: 'LexendLight',
+                                  letterSpacing: -2.0,),
+                            ),
+                          ),
+                        ],
                       ),
-                    ],
-                  ),
-
-                   Column(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      // Imagem e texto "Better Things"
-                      SizedBox(
-                        width: 80, // Definindo a largura desejada da imagem
-                        height: 80, // Definindo a altura desejada da imagem
-                        child: Image.asset(
-                          'images/spicy.png',
-                          fit: BoxFit.cover, // Para cobrir o tamanho definido
-                        ),
-                      ),
-                      Padding(
-                        padding: EdgeInsets.only(top: 10),
-                        child: Text(
-
-                          'SPICY\n',
-                          style: TextStyle(
-                              fontSize: 15,
-                              color: Colors.white,
-                              fontFamily: 'LexendLight',
-                              letterSpacing: -2.0,),
-                        ),
-                      ),
-                    ],
-                  ),
-                ],
-              ),
-
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  Column(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      // Imagem e texto "Better Things"
-                      SizedBox(
-                        width: 80, // Definindo a largura desejada da imagem
-                        height: 80, // Definindo a altura desejada da imagem
-                        child: Image.asset(
-                          'images/savage.png',
-                          fit: BoxFit.cover, // Para cobrir o tamanho definido
-                        ),
-                      ),
-                      Padding(
-                        padding: EdgeInsets.all(5),
-                        child: Text(
-                          'SAVAGE \n',
-                          style: TextStyle(
-                              fontSize: 15,
-                              color: Colors.white,
-                              fontFamily: 'LexendLight',
-                              letterSpacing: -2.0,),
-                              overflow: TextOverflow.ellipsis, // Define o comportamento de overflow
-                              maxLines: null, // Permite múltiplas linhas (nenhum limite)
-                        ),
-                      ),
-                    ],
-                  ),
-
-                  Column(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      // Imagem e texto "Better Things"
-                      SizedBox(
-                        width: 80, // Definindo a largura desejada da imagem
-                        height: 80, // Definindo a altura desejada da imagem
-                        child: Image.asset(
-                          'images/next.png',
-                          fit: BoxFit.cover, // Para cobrir o tamanho definido
-                        ),
-                      ),
-                      Padding(
-                        padding: EdgeInsets.only(top: 10),
-                        child: Text(
-
-                          'Next\nLevel',
-                          style: TextStyle(
-                              fontSize: 15,
-                              color: Colors.white,
-                              fontFamily: 'LexendLight',
-                              letterSpacing: -2.0,),
-                        ),
-                      ),
-                    ],
-                  ),
-
-                   Column(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      // Imagem e texto "Better Things"
-                      SizedBox(
-                        width: 80, // Definindo a largura desejada da imagem
-                        height: 80, // Definindo a altura desejada da imagem
-                        child: Image.asset(
-                          'images/blackmamba.png',
-                          fit: BoxFit.cover, // Para cobrir o tamanho definido
-                        ),
-                      ),
-                      Padding(
-                        padding: EdgeInsets.only(top: 10),
-                        child: Text(
-
-                          'Black\nMamba',
-                          style: TextStyle(
-                              fontSize: 15,
-                              color: Colors.white,
-                              fontFamily: 'LexendLight',
-                              letterSpacing: -2.0,),
-                        ),
+                  
+                       Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          // Imagem e texto "Better Things"
+                          SizedBox(
+                            width: 100, // Definindo a largura desejada da imagem
+                            height: 100, // Definindo a altura desejada da imagem
+                            child: Image.asset(
+                              'images/blackmamba.png',
+                              fit: BoxFit.cover, // Para cobrir o tamanho definido
+                            ),
+                          ),
+                          Padding(
+                            padding: EdgeInsets.only(top: 10),
+                            child: Text(
+                  
+                              'Black\nMamba',
+                              style: TextStyle(
+                                  fontSize: 15,
+                                  color: Colors.white,
+                                  fontFamily: 'LexendLight',
+                                  letterSpacing: -2.0,),
+                            ),
+                          ),
+                        ],
                       ),
                     ],
                   ),
