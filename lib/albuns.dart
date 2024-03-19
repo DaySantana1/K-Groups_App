@@ -23,41 +23,48 @@ class AlbunsSC extends StatelessWidget {
             ),
           ),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Align(
-                alignment: Alignment.topCenter,
-                child: Padding(
-                  padding: EdgeInsets.only(top: 50),
-                  child: Text(
-                    'AESPA',
-                    style: TextStyle(
-                      fontSize: 35,
-                      color: Colors.white,
-                      fontFamily: 'LexendRegular',
+              // Novo Column para os dois primeiros textos
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Padding(
+                    padding: EdgeInsets.only(top: 50),
+                    child: Text(
+                      'AESPA',
+                      style: TextStyle(
+                        fontSize: 35,
+                        color: Colors.white,
+                        fontFamily: 'LexendRegular',
+                      ),
                     ),
                   ),
-                ),
-              ),
-              Align(
-                alignment: Alignment.topCenter,
-                child: Padding(
-                  padding: EdgeInsets.only(top: 14),
-                  child: Text(
-                    'ÁLBUNS',
-                    style: TextStyle(
-                      fontSize: 22,
-                      color: Colors.white,
-                      fontFamily: 'LexendRegular',
+                  Padding(
+                    padding: EdgeInsets.only(top: 14),
+                    child: Text(
+                      'ÁLBUNS',
+                      style: TextStyle(
+                        fontSize: 22,
+                        color: Colors.white,
+                        fontFamily: 'LexendRegular',
+                      ),
                     ),
                   ),
-                ),
+                ],
               ),
+
+              // Spacer para separar os dois grupos de widgets
+              Spacer(),
+
+              // Row para exibir imagens e textos
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   Column(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
+                      // Imagem e texto "Better Things"
                       SizedBox(
                         width: 80, // Definindo a largura desejada da imagem
                         height: 80, // Definindo a altura desejada da imagem
@@ -66,12 +73,18 @@ class AlbunsSC extends StatelessWidget {
                           fit: BoxFit.cover, // Para cobrir o tamanho definido
                         ),
                       ),
-                      Text(
-                        'Better Things',
-                        style: TextStyle(
-                            fontSize: 10,
-                            color: Colors.white,
-                            fontFamily: 'LexendLight'),
+                      Padding(
+                        padding: EdgeInsets.all(5),
+                        child: Text(
+                          'Better\nThings',
+                          style: TextStyle(
+                              fontSize: 15,
+                              color: Colors.white,
+                              fontFamily: 'LexendLight',
+                              letterSpacing: -2.0,),
+                              overflow: TextOverflow.ellipsis, // Define o comportamento de overflow
+                              maxLines: null, // Permite múltiplas linhas (nenhum limite)
+                        ),
                       ),
                     ],
                   ),
@@ -79,6 +92,7 @@ class AlbunsSC extends StatelessWidget {
                   Column(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
+                      // Imagem e texto "Better Things"
                       SizedBox(
                         width: 80, // Definindo a largura desejada da imagem
                         height: 80, // Definindo a altura desejada da imagem
@@ -87,19 +101,25 @@ class AlbunsSC extends StatelessWidget {
                           fit: BoxFit.cover, // Para cobrir o tamanho definido
                         ),
                       ),
-                      Text(
-                        'DRAMA',
-                        style: TextStyle(
-                            fontSize: 10,
-                            color: Colors.white,
-                            fontFamily: 'LexendLight'),
+                      Padding(
+                        padding: EdgeInsets.only(top: 10),
+                        child: Text(
+
+                          'DRAMA\n',
+                          style: TextStyle(
+                              fontSize: 15,
+                              color: Colors.white,
+                              fontFamily: 'LexendLight',
+                              letterSpacing: -2.0,),
+                        ),
                       ),
                     ],
                   ),
 
-                Column(
+                   Column(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
+                      // Imagem e texto "Better Things"
                       SizedBox(
                         width: 80, // Definindo a largura desejada da imagem
                         height: 80, // Definindo a altura desejada da imagem
@@ -108,19 +128,30 @@ class AlbunsSC extends StatelessWidget {
                           fit: BoxFit.cover, // Para cobrir o tamanho definido
                         ),
                       ),
-                      Text(
-                        'SPICY',
-                        style: TextStyle(
-                            fontSize: 10,
-                            color: Colors.white,
-                            fontFamily: 'LexendLight'),
+                      Padding(
+                        padding: EdgeInsets.only(top: 10),
+                        child: Text(
+
+                          'SPICY\n',
+                          style: TextStyle(
+                              fontSize: 15,
+                              color: Colors.white,
+                              fontFamily: 'LexendLight',
+                              letterSpacing: -2.0,),
+                        ),
                       ),
                     ],
                   ),
+                ],
+              ),
 
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
                   Column(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
+                      // Imagem e texto "Better Things"
                       SizedBox(
                         width: 80, // Definindo a largura desejada da imagem
                         height: 80, // Definindo a altura desejada da imagem
@@ -129,12 +160,18 @@ class AlbunsSC extends StatelessWidget {
                           fit: BoxFit.cover, // Para cobrir o tamanho definido
                         ),
                       ),
-                      Text(
-                        'SAVAGE',
-                        style: TextStyle(
-                            fontSize: 25,
-                            color: Colors.white,
-                            fontFamily: 'LexendLight'),
+                      Padding(
+                        padding: EdgeInsets.all(5),
+                        child: Text(
+                          'SAVAGE \n',
+                          style: TextStyle(
+                              fontSize: 15,
+                              color: Colors.white,
+                              fontFamily: 'LexendLight',
+                              letterSpacing: -2.0,),
+                              overflow: TextOverflow.ellipsis, // Define o comportamento de overflow
+                              maxLines: null, // Permite múltiplas linhas (nenhum limite)
+                        ),
                       ),
                     ],
                   ),
@@ -142,6 +179,7 @@ class AlbunsSC extends StatelessWidget {
                   Column(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
+                      // Imagem e texto "Better Things"
                       SizedBox(
                         width: 80, // Definindo a largura desejada da imagem
                         height: 80, // Definindo a altura desejada da imagem
@@ -150,19 +188,25 @@ class AlbunsSC extends StatelessWidget {
                           fit: BoxFit.cover, // Para cobrir o tamanho definido
                         ),
                       ),
-                      Text(
-                        'Next Level',
-                        style: TextStyle(
-                            fontSize: 25,
-                            color: Colors.white,
-                            fontFamily: 'LexendLight'),
+                      Padding(
+                        padding: EdgeInsets.only(top: 10),
+                        child: Text(
+
+                          'Next\nLevel',
+                          style: TextStyle(
+                              fontSize: 15,
+                              color: Colors.white,
+                              fontFamily: 'LexendLight',
+                              letterSpacing: -2.0,),
+                        ),
                       ),
                     ],
                   ),
 
-                  Column(
+                   Column(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
+                      // Imagem e texto "Better Things"
                       SizedBox(
                         width: 80, // Definindo a largura desejada da imagem
                         height: 80, // Definindo a altura desejada da imagem
@@ -171,20 +215,26 @@ class AlbunsSC extends StatelessWidget {
                           fit: BoxFit.cover, // Para cobrir o tamanho definido
                         ),
                       ),
-                      Text(
-                        'Black Mamba',
-                        style: TextStyle(
-                            fontSize: 25,
-                            color: Colors.white,
-                            fontFamily: 'LexendLight'),
+                      Padding(
+                        padding: EdgeInsets.only(top: 10),
+                        child: Text(
+
+                          'Black\nMamba',
+                          style: TextStyle(
+                              fontSize: 15,
+                              color: Colors.white,
+                              fontFamily: 'LexendLight',
+                              letterSpacing: -2.0,),
+                        ),
                       ),
                     ],
                   ),
-
-                  // Adicione mais widgets Column para mais imagens e textos
                 ],
               ),
-            ], // fechando o children do Column
+
+              // Spacer para separar os dois grupos de widgets
+              Spacer(),
+            ],
           ),
         ),
       ),
